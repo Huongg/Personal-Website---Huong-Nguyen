@@ -1,0 +1,91 @@
+
+/* Header */
+.main-header {
+	background-color: #7F807F;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+.header-nav-menu ul{
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+    margin: 10px 10px;
+    padding: 10px 20px;
+    color: #F25F5C;
+}
+.header.nav-menu li a {
+    text-decoration: none;
+    display: inline;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin: 10px 10px;
+    font-weight: bold;
+    color: #F25F5C;
+}
+.header.nav-menu li {
+    float: left;
+}
+
+/* Main Intro */
+#main-intro {
+    background-color: #7F807F;
+}
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+
+    /* cirlce-button style */
+.circle{
+    height: 150px;
+    width: 150px;
+    background-color: #555;
+    border-radius: 50%;
+    margin: 30px 20px 30px 20px;
+}
+#about-me{
+    background-color: #F25F5C;
+}
+#experience{
+    background-color: #FFE066;
+}
+#skills{
+    background-color: #70C1B3;
+}
+
+.h1-aboutMe{
+    margin-left: 25px;
+}
+.nav-menu ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+    margin: 10px 10px;
+    padding: 10px 20px;
+}
+.nav-menu li a {
+    text-decoration: none;
+    display: inline;
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 10px 10px;
+    font-weight: bold;
+    text-align: center;
+}
+.nav-menu li {
+    float: left;
+}
