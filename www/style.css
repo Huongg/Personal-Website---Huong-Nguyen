@@ -1,33 +1,27 @@
-html{
-   background-color: #B9B9B9; 
+html {
+   background-color: #DAE9EF; 
+   position: relative;
 }
 /* Header */
 .main-header {
-	background-color: #B9B9B9;
+	background-color: #DAE9EF;
     padding-top: 30px;
     padding-bottom: 50px;
 }
 .header-nav-menu ul{
     list-style-type: none;
     margin-bottom: 10px;
-    padding: 0;
     overflow: hidden;
     display: inline;
-    margin: 10px 10px;
-    padding: 10px 20px;
     color: #F25F5C;
-}
-.header.nav-menu li a {
-    text-decoration: none;
-    display: inline;
-    padding: 10px 20px;
+    padding-top: 70px;
     font-size: 15px;
-    margin: 10px 10px;
-    font-weight: bold;
-    color: #F25F5C;
+    margin-top: 70px;
 }
-.header.nav-menu li {
-    float: left;
+.header.nav-menu {
+    padding-top: 70px;
+    margin-top: 70px;
+    position: relative;
 }
 
 .title-h1, .title-h3 {
@@ -37,7 +31,7 @@ html{
 
 /* Main Intro */
 #main-intro {
-    background-color: #B9B9B9;
+    background-color: #DAE9EF;
 }
 .circular--landscape {
   display: inline-block;
@@ -57,12 +51,17 @@ html{
 
     /* cirlce-button style */
 .circle{
-    height: 150px;
-    width: 150px;
-    background-color: #555;
+    height: 160px;
+    width: 160px;
     border-radius: 50%;
     margin: 30px 20px 30px 20px;
     position: relative;
+}
+.circle a{
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    text-align: center;
 }
 
 #about-me{
@@ -70,9 +69,10 @@ html{
 }
 #experience{
     background-color: #FFE066;
+
 }
 #skills{
-    background-color: #70C1B3;
+    background-color: #4B8178;
 }
 
 .h1-aboutMe{
@@ -102,9 +102,31 @@ html{
     float: left;
 }
 
+/* Contact Info*/
 
-
-footer{
-    background-color: #B9B9B9;
+footer {
+    background-color: #FFE88F
+    width: 1700px;
+    position: absolute;
+    left: 0px;
+    height: 150px;
+    top: 700px;
 }
 
+.contact-info{
+    position: absolute;
+    background-color: #FFE88F;
+    width: 1700px;
+    position: absolute;
+    padding-top: 15px ;
+    height: 140px;
+
+
+}
+.icon {
+    height: 45px;
+    width: 45px;
+    position: relative;
+}
+
+/
