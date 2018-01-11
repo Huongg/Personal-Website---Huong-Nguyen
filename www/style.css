@@ -1,7 +1,9 @@
-
+html{
+   background-color: #B9B9B9; 
+}
 /* Header */
 .main-header {
-	background-color: #7F807F;
+	background-color: #B9B9B9;
     padding-top: 30px;
     padding-bottom: 50px;
 }
@@ -28,22 +30,28 @@
     float: left;
 }
 
+.title-h1, .title-h3 {
+    text-align: center;
+    position: relative;
+}
+
 /* Main Intro */
 #main-intro {
-    background-color: #7F807F;
+    background-color: #B9B9B9;
 }
 .circular--landscape {
   display: inline-block;
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   overflow: hidden;
   border-radius: 50%;
+  margin-left: 40px;
 }
 
 .circular--landscape img {
   width: auto;
-  height: 100%;
+  height: 150%;
   margin-left: -50px;
 }
 
@@ -54,7 +62,9 @@
     background-color: #555;
     border-radius: 50%;
     margin: 30px 20px 30px 20px;
+    position: relative;
 }
+
 #about-me{
     background-color: #F25F5C;
 }
@@ -80,12 +90,21 @@
 .nav-menu li a {
     text-decoration: none;
     display: inline;
-    padding: 10px 20px;
+    padding: 30px 20px;
     font-size: 20px;
-    margin: 10px 10px;
+    margin: 30px 10px;
     font-weight: bold;
     text-align: center;
+    position: absolute;
+    vertical-align: bottom;
 }
 .nav-menu li {
     float: left;
 }
+
+
+
+footer{
+    background-color: #B9B9B9;
+}
+
