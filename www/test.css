@@ -85,11 +85,10 @@ h5, h6, p{
    outline: none;
 }
 
-body {
+main {
    margin: 0;
    padding: 30px 0;
    font-family: 'Roboto', sans-serif;
-   background: #F1F2F6;
 }
 
 h1 {
