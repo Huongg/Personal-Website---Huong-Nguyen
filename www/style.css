@@ -215,11 +215,29 @@ type=reset], [type=submit], button, html [type=button] {
 }
 
 /* Main Intro */
-header {
-    background-color: black;
-}
+header.masthead {
+  padding-top: calc(6rem + 72px);
+  padding-bottom: 6rem; }
+  header.masthead h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold; }
+  header.masthead h3 {
+    font-size: 1.3rem;
+    font-family: 'Lato'; }
 
-.h1-hello{
+@media (min-width: 992px) {
+  header.masthead {
+    padding-top: calc(6rem + 106px);
+    padding-bottom: 6rem; }
+    header.masthead h1 {
+      font-size: 4.75em;
+      line-height: 4rem; }
+    header.masthead h2 {
+      font-size: 1.75em; } }
+
+/*.h1-hello{
     font-family: 'Pacifico', cursive;
     font-weight: bold;
     color: #061f3a;
@@ -230,7 +248,7 @@ header {
     font-family: 'Pacifico', serif;
     color: #061f3a
     font-size: 65px;
-}
+}*/
 .circular--landscape {
   display: inline-block;
   position: relative;
