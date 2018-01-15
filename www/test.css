@@ -116,7 +116,7 @@ h1 span {
    left: 50%;
    margin-left: -1px;
    width: 2px;
-   height: 900px;
+   height: 100%;
    background: #CCD1D9;
    z-index: 1
 }
