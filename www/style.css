@@ -491,13 +491,15 @@ footer {
 .icon {
     height: 50px;
     width: 50px;
+    margin-bottom: 15px;
 }
 
 #block {
     text-align: center;
     color: white;
+}
 
-h5, h6, p{
+footer h4, p{
     margin: 0;
     padding: 0;
 }
