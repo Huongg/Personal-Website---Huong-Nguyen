@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
  	<!--Link HTML and CSS -->
- 	<link rel="stylesheet" type="text/css" href="experience-style.css">
+ 	<link rel="stylesheet" type="text/css" href="style.css">
 
  	<!-- Bootstrap -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,6 +14,9 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Cambo" rel="stylesheet">
+	<link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 	
 	<!-- jQuery/java script -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -24,30 +27,34 @@
  </head>
 
  <body>
- 	<header class="main-header">
- 		<div class="container">
- 			<div class="row">
- 				<div class="col-xs-12 col-md-5">
-	 				<h1 class="title-h1">Huong Nguyen</h1>
-	 				<h4 class="title-h4">Front-end developer/UX&UI Designer</h4>
-	 			</div>
-	 			<div class="col-xs-12 col-md-7">
-	 				<div class="header-nav-menu">
-							<ul class="nav nav-pills">
-								<li role="presentation"><a href="#home">Home</a></li>
-								<li role="presentation"><a href="#about-me">About Me</a></li>
-								<li role="presentation"><a href="#experience">Experiences</a></li>
-								<li role="presentation"><a href="#contact">Contact</a></li>
-							</ul>
-					</div>
-	 			</div>
- 			</div>
- 		</div>
- 	</header>
- 	
- 	<main>
- 		<h1>My Experiences</h1>
-		<div class="container">
+ 	<!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" id="mainNav">
+      <div class="container">
+      	<div class="row">
+      		<div class="col-md-5">
+      			<a class="navbar-brand" href="#page-top">Huong Nguyen</a>
+      		</div>
+      		<div class="col-md-7" id="navbarResponsive">
+	          <ul>
+	            <li>
+	              <a class="nav-link py-3 px-0 px-lg-3" href="#portfolio">Portfolio</a>
+	            </li>
+	            <li>
+	              <a class="nav-link py-3 px-0 px-lg-3" href="#about">About</a>
+	            </li>
+	            <li>
+	              <a class="nav-link py-3 px-0 px-lg-3" href="#contact">Contact</a>
+	            </li>
+	          </ul>
+	        </div>
+      	</div>
+      </div>
+    </nav>
+
+    <!--Timeline-->
+    <section id="timeline">
+        <h2 class="experience">Experiences</h2>
+        <div class="container">
 		   <div class="timeline-block timeline-block-right">
 		      <div class="marker"></div>
 		      <div class="timeline-content">
@@ -92,28 +99,26 @@
 		         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate.</p>
 		      </div>
 		   </div>
-		</div>
-	</main>
-
-	<footer>
+    </section>
+	 <footer>
 	 	<div class="contact-info">
 		 	<div class="container-fluid">
 		 		<div class="row">
 		 			<div class="col-xs-2 col-md-2">
 		 			</div>
-		 			<div class="col-xs-3 col-md-3 icon-box">
+		 			<div class="col-xs-3 col-md-3" id="block">
 		 				<img class="icon" src="./assets/phone-call.png">
 		 				<p>give me</p>
 		 				<h4>A CALL</h4>
 		 				<p>07423415898</p>
 		 			</div>
-		 			<div class="col-xs-3 col-md-3 icon-box">
+		 			<div class="col-xs-3 col-md-3" id="block">
 		 				<img class="icon" src="./assets/waving-hand.png">
 		 				<p>say hello</p>
 		 				<h4>BY EMAIL</h4>
 		 				<p>huongg1409@gmail.com</p>
 		 			</div>
-		 			<div class="col-xs-3 col-md-3 icon-box">
+		 			<div class="col-xs-3 col-md-3" id="block">
 		 				<img class="icon" src="./assets/facebook.png">
 		 				<p>follow me on</p>
 		 				<h4>FACEBOOK</h4>
@@ -123,6 +128,7 @@
 	 	</div>
 	 </footer>
  </body>
+
 </html>
 
 
