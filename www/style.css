@@ -36,7 +36,10 @@ h6 {
 .navbar-collapse{
     align-items: center;
 }
-
+.navbar {
+    margin-bottom: 0px!important;
+    padding-bottom: 15px;
+}
 hr.star-light,
 hr.star-dark {
   max-width: 15rem;
