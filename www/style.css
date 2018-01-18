@@ -24,6 +24,7 @@ h6 {
 #mainNav .navbar-toggler {
     font-size: 80%;
     padding: .8rem;
+
 }
 .navbar-toggler {
     padding: .25rem .75rem;
@@ -32,15 +33,17 @@ h6 {
     background: 0 0;
     border: 1px solid transparent;
     border-radius: .25rem;
+    padding-bottom: 70px;
 }
 .navbar-collapse{
     align-items: center;
+    padding-bottom: 70px;
 }
 .navbar {
     margin-bottom: 0px!important;
     padding-bottom: 15px;
 }
-hr.star-light,
+/*hr.star-light,
 hr.star-dark {
   max-width: 15rem;
   padding: 0;
@@ -102,7 +105,7 @@ hr.star-dark:after {
     width: 3.5rem;
     height: 3.5rem;
     background-color: rgba(33, 37, 41, 0.5);
-    line-height: 3.1rem; }
+    line-height: 3.1rem; }*/
 
 #mainNav {
   padding-top: 1rem;
@@ -159,10 +162,10 @@ hr.star-dark:after {
   }
 
   .pl-lg-3, .px-lg-3 {
-    padding-left: 1rem!important;
-    padding-right: 1rem!important;
-    padding-top: 1rem!important;
-    padding-bottom: 1rem!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+    padding-top: 3px!important;
+    padding-bottom: 3px!important;
    }
 
    .navbar-expand-lg .navbar-toggler {
@@ -320,8 +323,7 @@ header.masthead {
 .about-box {
     padding: 10px;
     background-color: #72e9c5;
-    height: 250px;
-    margin-bottom: 13px;
+    height: 280px;
     text-align: center;
     border-radius: 20px;
     margin-bottom: 40px;
