@@ -1,14 +1,10 @@
 
 
 *, ::after, ::before {
-    -webkit-box-sizing: border-box;
-   -moz-box-sizing: border-box;
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
 body {
-  font-family: 'Lato';
-  background-color: #e9e5e5!important 
-}
+  font-family: 'Lato'; }
 
 h1,
 h2,
@@ -18,17 +14,6 @@ h5,
 h6 {
   font-weight: 700;
   font-family: 'Montserrat'; }
-<<<<<<< HEAD
-
-#mainNav {
-    font-size: 20px;
-    font-weight: 700;
-    font-family: 'Montserrat';
-    background-color: #e9e5e5!important;
-
-}
-
-=======
 .fa {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
@@ -39,6 +24,7 @@ h6 {
 #mainNav .navbar-toggler {
     font-size: 80%;
     padding: .8rem;
+
 }
 .navbar-toggler {
     padding: .25rem .75rem;
@@ -47,18 +33,17 @@ h6 {
     background: 0 0;
     border: 1px solid transparent;
     border-radius: .25rem;
+    padding-bottom: 70px;
 }
 .navbar-collapse{
     align-items: center;
+    padding-bottom: 70px;
 }
->>>>>>> parent of 5822d3a... Added "Download CV to about me section"
 .navbar {
     margin-bottom: 0px!important;
     padding-bottom: 15px;
 }
-<<<<<<< HEAD
-=======
-hr.star-light,
+/*hr.star-light,
 hr.star-dark {
   max-width: 15rem;
   padding: 0;
@@ -120,30 +105,31 @@ hr.star-dark:after {
     width: 3.5rem;
     height: 3.5rem;
     background-color: rgba(33, 37, 41, 0.5);
-    line-height: 3.1rem; }
->>>>>>> parent of 5822d3a... Added "Download CV to about me section"
+    line-height: 3.1rem; }*/
 
-#mainNav .navbar-brand {
-    color: #fff; 
-    margin-left: 60px;
-    margin-top: 10px;
-}
-#navbarResponsive {
+#mainNav {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  font-weight: 700;
+  font-family: 'Montserrat';
+  background-color: #2c3e50!important; }
+
+  #mainNav .navbar-brand {
+    color: #fff; }
+  #mainNav .navbar-nav {
     margin-top: 1rem;
-    letter-spacing: 0.0625rem; 
-}
-#navbarResponsive li{
-    display: inline;
-    float: left;
-    padding: 5px 10px;
-    font-size: 20px;
-
-}
-
-#navbarResponsive ul{
-    padding-top: 15px;
-    vertical-align: baseline;
-}
+    letter-spacing: 0.0625rem; }
+    #mainNav .navbar-nav li.nav-item a.nav-link {
+      color: #fff; }
+      #mainNav .navbar-nav li.nav-item a.nav-link:hover {
+        color: #18BC9C; }
+      #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
+        color: #fff; }
+      #mainNav .navbar-nav li.nav-item a.nav-link.active {
+        color: #18BC9C; }
+  #mainNav .navbar-toggler {
+    font-size: 80%;
+    padding: 0.8rem; }
 
 @media (min-width: 992px) {
   #mainNav {
@@ -175,13 +161,11 @@ hr.star-dark:after {
     margin-right: .25rem!important;
   }
 
-<<<<<<< HEAD
-=======
   .pl-lg-3, .px-lg-3 {
-    padding-left: 1rem!important;
-    padding-right: 1rem!important;
-    padding-top: 1rem!important;
-    padding-bottom: 1rem!important;
+    padding-left: 3px!important;
+    padding-right: 3px!important;
+    padding-top: 3px!important;
+    padding-bottom: 3px!important;
    }
 
    .navbar-expand-lg .navbar-toggler {
@@ -196,17 +180,15 @@ type=reset], [type=submit], button, html [type=button] {
 .rounded {
     border-radius: .25rem!important;
 }
->>>>>>> parent of 5822d3a... Added "Download CV to about me section"
 
     /* Main Intro - HEADER*/
 header.masthead{
-    background-color: #e9e5e5!important;
+    background-color: #20c997!important;
 }
 
 header.masthead {
   padding-top: calc(6rem + 72px);
-  margin-bottom: 70px;
-}
+  padding-bottom: 6rem; }
   header.masthead h1 {
     font-size: 3rem;
     line-height: 3rem;
@@ -290,10 +272,6 @@ header.masthead {
 .nav-menu li {
     float: left;
 }
-.box-p{
-    position: absolute;
-    margin-top: 200px;
-}
 
 /*@media (min-width: 992px) {
   header.masthead {
@@ -307,7 +285,7 @@ header.masthead {
   header.masthead h2 {
       font-size: 1.75em; 
   } 
-}*
+}*/
 
 @media screen and (max-width: 760px) {
    .circle{
@@ -339,31 +317,21 @@ header.masthead {
 
 
 /*About Section*/
-.jumbotron{
-    background-color: #e9e5e5!important;
-    margin-top: 70px;
-}
 .text-center {
     text-align: center!important;
 }
 .about-box {
-<<<<<<< HEAD
-    padding-bottom: 10px;
-    background-color: #99D3DF;
-    height: 280px;
-=======
     padding: 10px;
     background-color: #72e9c5;
-    height: 250px;
-    margin-bottom: 13px;
->>>>>>> parent of 5822d3a... Added "Download CV to about me section"
+    height: 280px;
     text-align: center;
     border-radius: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
 }
 
 .h2-aboutme{
     border-bottom: 1px dashed;
+    padding: 10px;
     display: inline-block;
     font-size: 45px;
     margin-bottom: 25px;
@@ -380,10 +348,10 @@ header.masthead {
 }
 
 #timeline {
-   margin-top: 70px;
+   margin: 0;
    padding: 30px 0;
    font-family: 'Roboto', sans-serif;
-   background-color: #88BBD6!important;
+   background-color: #20c997!important;
    text-align: center!important;
 }
 
@@ -520,8 +488,8 @@ footer {
     position: absolute;
     background-color: #2c3e50;
     width: 100%;
-    padding-top: 40px;
-    height: 200px;
+    padding-top: 60px;
+    height: 300px;
 
 
 }
@@ -540,7 +508,6 @@ footer h4, p{
     margin: 0;
     padding: 0;
 }
-
 
 
 
