@@ -48,18 +48,19 @@ h6 {
     color: white;
 
 }
+#website-bar li a:hover{
+  color: #F25F5C;
+}
 #website-bar li {
     float: left;
 }
 
     /* Main Intro - HEADER*/
-header.masthead{
-    background-color: #e9e5e5!important 
-}
-
 header.masthead {
   padding-top: 120px;
-  padding-bottom: 130px; 
+  padding-bottom: 130px;
+  background-color: #e9e5e5!important; 
+  margin-bottom: 50p; 
 }
   header.masthead h1 {
     font-size: 3rem;
@@ -145,7 +146,9 @@ header.masthead {
     color: #e9e5e5;
     text-align: justify;
 } 
-
+.nav-menu li a:hover {
+  color: black;
+}
 
 .nav-menu li {
     float: left;
@@ -364,11 +367,6 @@ header.masthead {
 
 footer {
     background-color: #747574;
-    /*width: 100%
-    height: 100%;
-    /*left: 0px;
-    height: 150px;
-    top: 700px;*/
 }
 
 .contact-info{
