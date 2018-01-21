@@ -103,28 +103,7 @@ header.masthead {
 
 
 }
-.circle span{
-    text-decoration: none;
-    color: white;
-    position: absolute;
-    text-align: center;
-    vertical-align: middle;
-    display: inline;
-    
-    -webkit-box-align: center;
-}
-.nav-menu li a{
-  padding-right: 30px!important;
-}
-/*.circle span a{
-    text-decoration: none;
-    color: white;
-    position: absolute;
-    text-align: initial;
-    vertical-align: middle;
-    -webkit-box-align: center;
-    padding-right: 100px;
-}*/
+
 
 #about-me{
     background-color: #F25F5C;
@@ -153,11 +132,9 @@ header.masthead {
 .nav-menu li a {
     text-decoration: none;
     display: inline;
-    padding: 30px 20px;
     font-size: 17px;
-    margin: 30px -40px;
+    margin-top: 60px;
     font-weight: bold;
-    text-align: center;
     position: absolute;
     vertical-align: middle;
     color: #e9e5e5;
