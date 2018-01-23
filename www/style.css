@@ -205,18 +205,18 @@ header.masthead {
 
 /*About Section*/
 .jumbotron{
-  background-color: #e9e5e5!important 
+  background-color: #e9e5e5!important;
 }
 .text-center {
     text-align: center!important;
 }
 .about-box {
     padding: 10px;
-    background-color: #72e9c5;
+    background-color: #e9e5e5;
     height: 280px;
     text-align: center;
     border-radius: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
 }
 
 .h2-aboutme{
@@ -224,6 +224,15 @@ header.masthead {
     padding: 10px;
     display: inline-block;
     font-size: 45px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-family: 'Pacifico', cursive;
+}
+.h3-aboutme{
+    border-bottom: 1px dashed;
+    padding: 10px;
+    display: inline-block;
+    font-size: 30px;
     margin-bottom: 25px;
     color: #2c3e50;
     font-family: 'Pacifico', cursive;
