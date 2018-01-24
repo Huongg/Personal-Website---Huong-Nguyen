@@ -330,16 +330,26 @@ header.masthead {
    color: black;
 }
 
+
+.timeline-content:hover {
+  
+   background-color: #dcd6d6;
+}
+
 .timeline-content h3 {
    margin-top: 5px;
    margin-bottom: 5px;
-   font-size: 25px;
+   font-size: 23px;
    font-weight: 500;
+   color: #2c3e50;
 }
 
 .timeline-content span {
-   font-size: 15px;
+   font-size: 26px;
    color: black;
+   font-weight: bold;
+   color: #2c3e50;
+   text-shadow: 1px 1px #2c3e50;
 }
 
 .timeline-content p {
