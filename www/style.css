@@ -3,17 +3,6 @@
 *, ::after, ::before {
     box-sizing: border-box;
 }
-body {
-  font-family: 'Lato'; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-  font-family: 'Montserrat'; }
 
     /*NAV BAR*/
 .navbar-menu {
@@ -159,6 +148,9 @@ header.masthead {
   position: absolute;
   margin-top: 200px;
 }
+.intro-p p{
+  font-family: 'Rubik', sans-serif!important;
+}
 
 /*@media (min-width: 992px) {
   header.masthead {
@@ -207,6 +199,9 @@ header.masthead {
 .jumbotron{
   background-color: #e9e5e5!important;
 }
+.jumbotron p{
+  font-family: 'Rubik', sans-serif!important;
+}
 .text-center {
     text-align: center!important;
 }
@@ -232,11 +227,37 @@ header.masthead {
     border-bottom: 1px dashed;
     padding: 10px;
     display: inline-block;
-    font-size: 30px;
+    font-size: 27px;
     margin-bottom: 25px;
     color: #2c3e50;
     font-family: 'Pacifico', cursive;
 }
+#right-col p{
+  font-size: 18px;
+  text-align: center;
+}
+
+#right-col ul {
+    list-style-type: none;
+}
+
+
+#aboutMe-skills ul{
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+#aboutMe-skills li {
+        display: inline!important;
+        margin: 15px 7px 15px 7px;
+        padding: 5px 10px;
+        background: #CBC8C8;
+        list-style: none;
+        cursor: default;
+        font-size: 1.2em;
+    }
+    
 
   /* TIMELINE */
 * {
