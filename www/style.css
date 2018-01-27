@@ -198,6 +198,7 @@ header.masthead {
 /*About Section*/
 .jumbotron{
   background-color: #e9e5e5!important;
+  margin-bottom: 0px!important;
 }
 .jumbotron p{
   font-family: 'Rubik', sans-serif!important;
@@ -210,8 +211,7 @@ header.masthead {
     background-color: #e9e5e5;
     height: 280px;
     text-align: center;
-    border-radius: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 180px;
 }
 
 .h2-aboutme{
@@ -401,6 +401,64 @@ header.masthead {
    }
 }
 
+  /*PROJECTS*/
+
+.h2-projects{
+    border-bottom: 1px dashed;
+    padding: 10px;
+    display: inline-block;
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-family: 'Pacifico', cursive;
+}
+
+#projects {
+    padding: 50px 15px;
+    border-bottom: 1px solid $border;
+    text-align: center;
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+}
+
+.project {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 4px;
+}
+.shadow-large {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.carousel-example-generic {
+    width: 166px;
+}
+/*.project-info {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 300px;
+    padding: 15px;
+
+    h3 {
+        font-size: 1.5em;
+        font-weight: 300;
+        color: $heading;
+        margin: 0 0 15px 0;
+    }
+
+    p {
+        color: $text;
+        margin: 0 0 15px 0;
+        font-size: 0.9em;
+    }
+}
 
 
 /* Contact Info*/
