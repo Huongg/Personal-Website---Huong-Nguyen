@@ -51,6 +51,16 @@ body{
     float: left;
 }
 
+// Small devices (phones, tablets less than 48em)
+@media (max-width: 47.9em) {
+// write CSS properties here
+}
+ 
+// Medium devices (tablets, small laptops less than 62em)
+@media (max-width: 61.9em) {
+// write CSS properties here
+ }
+
     /* Main Intro - HEADER*/
 header.masthead {
   padding-top: 130px;
@@ -440,8 +450,12 @@ header.masthead {
     box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
 }
 
-.carousel-example-generic {
-    width: 166px;
+.carousel-inner img {
+    margin-top: 15px;
+}
+
+.project-info a{
+  margin-bottom: 15px;
 }
 
 /*Wasteless app*/
