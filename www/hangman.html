@@ -1,0 +1,90 @@
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="./styles/hangman.css">
+    <link rel="stylesheet" type="text/css" href="./styles/style.css">
+
+    <!-- Google fonts -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cambo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"> -->
+
+    <!-- <script type="text/javascript" src="./scripts/jquery.js"></script> -->
+    
+    
+    <title>Hangman Game by Huong</title>
+    <meta name="description" content="Portfolio and personal website of Huong Nguyen, an aspiring front-end developer, UX designer and experienced advertising executive">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+ </head>
+
+  <body>
+    <header>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar-menu">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-6 text-center" id="website-name">
+              <h1>HUONG NGUYEN</h1>
+          </div>
+          <div class="col-md-6 text-center" id="website-bar">
+            <ul class="navbar-nav">
+              <li class="active"><a href="./index.html">Home</a></li>
+              <li><a href="./about-me.html">About Me</a></li>
+              <li><a href="./experiences.html">Experiences</a></li>
+              <li><a href="./projects.html">Projects</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+
+    <div id="container">
+      <div class="board">
+        <h1 id="title"> Hangman Game</h1>
+        <div class="hangman-word"> 
+
+        </div>
+        <div class="remaining-guesses invisible" > 
+          <span class="remaining">7</span> guesses left
+        </div>
+
+        <div id="hangman-draw">
+          <canvas id="canvas-id" width="400" height="500"></canvas>
+        </div>
+
+        <div class="console">
+          <input type="hidden" class="token invisible" > </input>
+          <input type="text" maxlength=1 class="letter invisible"> </input>
+          <button id="guess" class= "invisible" >Guess</button> 
+        </div>
+        
+        <p class="text-transparent invisible" id="used-letter"> <small>Used letters</small>         
+        <div class="attempts"></div>
+        <button id="new-game" class="visible">Start a new game</button>
+      </div>
+      <br/>
+
+    </div>
+    <footer>
+  
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="./scripts/jquery.js"></script>
+    <script type="text/javascript" src="./scripts/hangman-script.js"></script>
+
+    
+
+  </body>
+</html>
