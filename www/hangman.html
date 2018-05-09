@@ -8,14 +8,24 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
     <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="./styles/hangman.css">
+    <!-- <link rel="stylesheet" type="text/css" href="./styles/hangman.css"> -->
     <link rel="stylesheet" type="text/css" href="./styles/style.css">
 
+    <!-- JASMINE -->
+    <link rel="shortcut icon" type="image/png" href="lib/jasmine-2.0.0/jasmine_favicon.png">
+    <link rel="stylesheet" type="text/css" href="lib/jasmine-2.0.0/jasmine.css">
+
+    <script type="text/javascript" src="lib/jasmine-2.0.0/jasmine.js"></script>
+    <script type="text/javascript" src="lib/jasmine-2.0.0/jasmine-html.js"></script>
+    <script type="text/javascript" src="lib/jasmine-2.0.0/boot.js"></script>
+
     <!-- Google fonts -->
-    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cambo" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 
     <!-- <script type="text/javascript" src="./scripts/jquery.js"></script> -->
     
@@ -49,40 +59,57 @@
     </nav>
 
 
-    <div id="container">
-      <div class="board">
-        <h1 id="title"> Hangman Game</h1>
-        <div class="hangman-word"> 
-
+    <div class="container" >
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center">
+            <h2 id="title" class="h2-hangman">Hangman Game</h2>
+            <!-- <h1 id="title" class="text-center"> Hangman Game</h1> -->
+            <div class="hangman-word"> 
+            </div>
+            <div class="remaining-guesses invisible" > 
+              <span class="remaining">7</span> guesses left
+            </div>
+          </div>
         </div>
-        <div class="remaining-guesses invisible" > 
-          <span class="remaining">7</span> guesses left
-        </div>
-
-        <div id="hangman-draw">
-          <canvas id="canvas-id" width="400" height="500"></canvas>
-        </div>
-
-        <div class="console">
-          <input type="hidden" class="token invisible" > </input>
-          <input type="text" maxlength=1 class="letter invisible"> </input>
-          <button id="guess" class= "invisible" >Guess</button> 
-        </div>
-        
-        <p class="text-transparent invisible" id="used-letter"> <small>Used letters</small>         
-        <div class="attempts"></div>
-        <button id="new-game" class="visible">Start a new game</button>
       </div>
-      <br/>
-
     </div>
-    <footer>
-  
-    </footer>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="hangman-draw">
+            <canvas id="canvas-id" width="400" height="500"></canvas>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="console">
+            <input type="hidden" class="token invisible" > </input>
+            <input type="text" maxlength=1 class="letter invisible"> </input>
+            <button id="guess" class= "invisible" >Guess</button>
+            <p class="text-transparent invisible" id="used-letter"> <small>Used letters</small> 
+            <div class="attempts"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center">
+            <button id="new-game" class="btn btn-primary visible">Start a new game</button>
+          </div>
+        </div>
+      </div>      
+    </div>
+      
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
     <script type="text/javascript" src="./scripts/jquery.js"></script>
     <script type="text/javascript" src="./scripts/hangman-script.js"></script>
+    <script type="text/javascript" src="./scripts/scriptSpec.js"></script>
 
     
 

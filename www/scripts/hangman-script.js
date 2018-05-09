@@ -5,19 +5,15 @@ $(document).ready(function() {
 	// startNewGame();
 
 	$("#new-game").click(function(){
-		startNewGame();
-
-	
+		startNewGame();	
 		$("#new-game").removeClass("visible");
 		$("#new-game").addClass("invisible");
-		
 
-		let arrOfInviClass = [".letter", "#guess", "#used-letter"];
+		let arrOfInviClass = [".letter", "#guess", "#used-letter", ".remaining-guesses"];
 		for (i=0; i<arrOfInviClass.length; i++){
 			$(arrOfInviClass[i]).removeClass("invisible");
 			$(arrOfInviClass[i]).addClass("visible");
 		}
-
 	})
 
 
@@ -30,7 +26,7 @@ $(document).ready(function() {
 
 
     $(document).on('keypress', function(event) {
-	    if (event.which == 13) { 
+	    if (event.which === 13) { 
 	      let letterInput = $(".letter").val();
 	      let token = $(".token").text();
 	      guessLetter (token, letterInput);
@@ -149,9 +145,10 @@ function updateNumber (token) {
 			context.lineTo(265, 210);
 			context.stroke();
 
-			returnMessage += ["GAME OVER"]; 
-			// alert(returnMessage);
 			getSolution (token);
+			// returnMessage += ["GAME OVER"]; 
+			// alert(returnMessage);
+			
 
 	}
 
@@ -169,7 +166,8 @@ function updateAttempts (val) {
 
 
 function guessLetter (token, letterInput){
-	let isValid = checkingInput(letterInput);
+	let attempts = $(".attempts").text();
+	let isValid = checkingInput(letterInput, attempts);
 
 	if (isValid ==true){
 		$(".letter").removeClass("error");
@@ -216,25 +214,40 @@ function getSolution (token){
 }
 
 function displaySolution(solution){
-	$(".hangman-word").html(solution);	
-	$(".letter").hide();
-	$("#guess").hide();
-	$("#new-game").show();
+	$(".hangman-word").html(solution);
+
+	let arrOfVisibleClass = [".letter", "#guess"];
+	for (i=0; i<arrOfVisibleClass.length; i++){
+		$(arrOfVisibleClass[i]).removeClass("visible");
+		$(arrOfVisibleClass[i]).addClass("invisible");
+	}
+
+	$("#new-game").removeClass("invisible");
+	$("#new-game").addClass("visible");
 
 }
 
+function hasAttempted (letterInput, attempts) {
+	let isAlreadyContained = attempts.indexOf(letterInput);	
+	if (isAlreadyContained > -1){
+		return false;
+	} else {
+		return true;
+	}
+}
 
-function checkingInput (letterInput){
+function checkingInput (letterInput, attempts){
 	
-	let isNumber = $.isNumeric(letterInput);
+	// let isNumber = $.isNumeric(letterInput);
 	let trimWhitespace = $.trim(letterInput);
 	let isOneCharacterLong = (trimWhitespace.length ===1);
-	let attempts = $(".attempts").text();
-	let isAlreadyContained = attempts.indexOf(letterInput);	
+	// let attempts = $(".attempts").text();
+	let isAlreadyContained = hasAttempted(letterInput, attempts);
+	let isACharacter = /[A-z]/.test(letterInput);
 
-	if (isNumber == true || isOneCharacterLong == false || !isAlreadyContained ==-1){
+	if (isOneCharacterLong === false || isAlreadyContained === false || isACharacter === false ){
 		return false;
-	} else{
+	} else {
 		return true;
 	}	
 }

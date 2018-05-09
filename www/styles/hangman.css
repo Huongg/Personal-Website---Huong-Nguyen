@@ -12,19 +12,17 @@ body {
   overflow: hidden;
 }
 
-header {
+/*header {
   text-align: center;
   background-color: #fdfdfd;
   border-bottom: 1px solid #e5e2e0;
 }
+*/
 
-#logo {
-  position: relative;
-  top: -2px;
-}
 
 #title {
   margin-bottom: 4em;
+  text-align: center;
 }
 input.error {
   border: 2px solid #da5754;
@@ -39,12 +37,12 @@ span.error {
   font-size: 1.5em;
 }
 
-#container {
+/*#container {
   width: 1040px;
   margin: 0px auto;
   margin-top: 100px;
   min-height: 750px;
-}
+}*/
 
 input[type='text'] {
   height: 2.2em;
@@ -59,6 +57,7 @@ button {
   margin: 10px;
   border: none;
   font-size: 1.4em;
+  text-align: center;
 }
 
 .correct {
@@ -79,6 +78,7 @@ button {
   padding: 20px;
   margin-top: 10px;
   text-decoration: none;
+  text-align: center;
 }
 
 .attempts span:not(:last-child):after {
@@ -100,27 +100,4 @@ button {
   color: #b5b5b5;
 }
 
-.board {
-  margin: 20px;
-  text-align: center;
-}
 
-footer {
-  padding-bottom: 10px;
-  border-bottom: 5px solid #4c4066;
-  position: absolute;
-  width: 100%;
-}
-
-footer #content {
-  width: 1040px;
-  margin: 0px auto;
-}
-
-
-.visible {
-  visibility: visible;
-}
-.invisible {
-  visibility: hidden;
-}
