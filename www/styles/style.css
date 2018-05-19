@@ -1,0 +1,593 @@
+
+
+/**, ::after, ::before {
+    box-sizing: border-box;
+}*/
+body{
+  background-color: #e9e5e5!important;
+}
+    /*NAV BAR*/
+
+.navbar{
+  background-color: #2c3e50; 
+ /* padding-top: 20px;
+  padding-bottom: 20px;
+  margin-bottom: 0px!important;*/
+}
+
+.navbar-brand{
+  text-align: center;
+  font-size: 2.5em;
+  color: white;
+  margin-top: 0.3em;
+
+
+}
+
+#navbarCollapse{
+  justify-content: center;
+}
+
+#navbarCollapse .nav-item{
+  padding: 20px 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+
+ 
+    /* Main Intro - HEADER*/
+header.masthead {
+  padding-top: 130px;
+  padding-bottom: 150px;
+  background-color: #e9e5e5!important; 
+
+}
+  header.masthead h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+    font-family: 'Pacifico', cursive;
+    font-weight: bold; 
+    font-color: #2c3e50;
+    font-size: 50px;
+  }
+  header.masthead h3 {
+    font-size: 1.3rem;
+    font-family: 'Lato';
+    font-color: #2c3e50; 
+  }
+
+
+.circular--landscape {
+  display: inline-block;
+  position: relative;
+  width: 28.125em;
+  height: 28.125em;
+  overflow: hidden;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.circular--landscape img {
+  width: auto;
+  height: 150%;
+
+}
+
+/* cirlce-button style */
+.circle{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+    position: relative;
+    font-family: Helvetica, Arial Black, sans;
+    text-align:center;
+    line-height: 0;
+    position: relative;
+    padding: 40% 0;
+    margin-top: 30px;
+}
+
+
+#about-me{
+    background-color: #F25F5C;
+}
+
+#experience{
+    background-color: #E8CC5D;
+}
+
+#skills{
+    background-color: #4B8178;
+}
+
+.header-content{
+  float: left;
+}
+
+.nav-menu{
+  float: left;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+    position: relative;
+}
+
+
+.nav-menu li a {
+    text-decoration: none;
+    display: inline;
+    font-size: 17px;
+    font-weight: bold;
+    color: #e9e5e5;
+    text-align: justify;
+} 
+.nav-menu li a:hover {
+  color: black;
+}
+
+.nav-menu li {
+    float: left;
+}
+
+
+.intro-p{
+  position: absolute;
+  float: left;
+}
+.intro-p p{
+  font-family: 'Rubik', sans-serif!important;
+}
+
+
+
+@media screen and (max-width: 760px) {
+   .circle{
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header-content{
+        text-align: center!important;
+    }
+    .circular--landscape {
+      width: 350px;
+      height: 350px;
+      overflow: hidden;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .circular--landscape img {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    /*.nav-menu li {
+        margin-left: 10px;
+    }*/
+    .nav-menu li a{
+        font-size: 17px;
+    }
+}
+
+
+/*About Section*/
+.jumbotron{
+  background-color: #e9e5e5!important;
+  margin-bottom: 0px!important;
+}
+.jumbotron p{
+  font-family: 'Rubik', sans-serif!important;
+}
+.text-center {
+    text-align: center!important;
+}
+.about-box {
+    padding: 10px;
+    background-color: #e9e5e5;
+    height: 280px;
+    text-align: center;
+    margin-bottom: 180px;
+}
+
+.h2-aboutme{
+    border-bottom: 1px dashed;
+    padding: 10px;
+    display: inline-block;
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-family: 'Pacifico', cursive;
+}
+.h3-aboutme{
+    border-bottom: 1px dashed;
+    padding: 10px;
+    display: inline-block;
+    font-size: 27px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-family: 'Pacifico', cursive;
+}
+#right-col p{
+  font-size: 18px;
+  text-align: center;
+}
+
+
+#aboutMe-skills ul{
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+#aboutMe-skills li {
+        display: inline!important;
+        margin: 15px 7px 15px 7px;
+        padding: 5px 10px;
+        background: #CBC8C8;
+        list-style: none;
+        cursor: default;
+        font-size: 1.2em;
+    }
+    
+
+  /* TIMELINE */
+* {
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   outline: none;
+}
+
+#timeline {
+   margin: 0;
+   padding: 30px 0;
+   font-family: 'Roboto', sans-serif;
+   background-color: #e9e5e5!important; 
+   text-align: center!important;
+}
+
+.experience {
+   border-bottom: 1px dashed!important;
+   padding-top: 10px;
+   padding-bottom: 30px;
+   display: inline-block;
+   font-size: 45px;
+   margin-bottom: 25px;
+   color: #2c3e50;
+   font-family: 'Pacifico', cursive;
+   text-align: center;
+}
+
+
+
+#timeline .container {
+   width: 90%;
+   max-width: 1200px;
+   padding: 50px 0;
+   margin: 50px auto;
+   position: relative;
+   overflow: hidden;
+}
+
+#timeline .container:before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 50%;
+   margin-left: -1px;
+   width: 2px;
+   height: 100%;
+   background: #CCD1D9;
+   z-index: 1
+}
+
+
+.timeline-block {
+   width: -webkit-calc(50% + 8px);
+   width: -moz-calc(50% + 8px);
+   width: calc(50% + 8px);
+   display: -webkit-box;
+   display: -webkit-flex;
+   display: -moz-box;
+   display: flex;
+   -webkit-box-pack: justify;
+   -webkit-justify-content: space-between;
+   -moz-box-pack: justify;
+   justify-content: space-between;
+   clear: both;
+}
+
+.timeline-block-right {
+   float: right;
+}
+
+.timeline-block-left {
+   float: left;
+   direction: rtl
+}
+
+.marker {
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   border: 2px solid #F5F7FA;
+   background: #4FC1E9;
+   margin-top: 10px;
+   z-index: 9999
+}
+
+.timeline-content {
+   width: 95%;
+   padding: 0 15px;
+   color: black;
+}
+
+
+.timeline-content:hover {
+  
+   background-color: #dcd6d6;
+}
+
+.timeline-content h3 {
+   margin-top: 5px;
+   margin-bottom: 5px;
+   font-size: 23px;
+   font-weight: 500;
+   color: #2c3e50;
+}
+
+.timeline-content span {
+   font-size: 26px;
+   color: black;
+   font-weight: bold;
+   color: #2c3e50;
+   text-shadow: 1px 1px #2c3e50;
+}
+
+.timeline-content p {
+   font-size: 14px;
+   line-height: 1.5em;
+   word-spacing: 1px;
+   color: black;
+}
+
+
+@media screen and (max-width: 768px) {
+   #timeline .container:before {
+      left: 8px;
+      width: 2px;
+      height: 1000px;
+   }
+   .timeline-block {
+      width: 100%;
+      margin-bottom: 30px;
+   }
+   .timeline-block-right {
+      float: none;
+   }
+
+   .timeline-block-left {
+      float: none;
+      direction: ltr;
+   }
+}
+
+  /*PROJECTS*/
+
+.h2-projects{
+    border-bottom: 1px dashed;
+    padding: 10px;
+    display: inline-block;
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-family: 'Pacifico', cursive;
+}
+
+#projects {
+    padding: 50px 15px;
+    border-bottom: 1px solid $border;
+    text-align: center;
+    background-color: #e9e5e5!important; 
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+}
+
+.project {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 4px;
+}
+.shadow-large {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.carousel-inner img {
+    margin-top: 15px;
+}
+
+.project-info a{
+  margin-bottom: 15px;
+}
+
+/*Wasteless app*/
+#wasteless{
+  margin-top: 50px;
+  margin-bottom: 50px;
+
+}
+.wasteless-image{
+  width: 100%;
+  height: auto;
+}
+
+/* Contact Info*/
+
+.container-fluid {
+    background-color: #2c3e50!important;
+}
+
+.contact-info{
+    position: absolute;
+    background-color: #2c3e50;
+    width: 100%;
+    height: 220px;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+.icon {
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#block {
+    text-align: center;
+    color: white;
+}
+
+footer h4, p{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* For mobile phones: */
+[class*="col-"] {
+    width: 100%;
+}
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+}
+
+
+/*HANGMAN STYLE*/
+
+.h2-hangman{
+    border-bottom: 1px dashed;
+    padding: 10px;
+    display: inline-block;
+    font-size: 45px;
+    color: #2c3e50;
+    font-family: 'Pacifico', cursive;
+}
+
+#title {
+  text-align: center;
+}
+input.error {
+  border: 2px solid #da5754;
+}
+
+span.error {
+  color: #da5754;
+}
+
+.remaining-guesses {
+  padding-top: 30px;
+  font-size: 1.5em;
+}
+
+
+input[type='text'] {
+  height: 2.2em;
+  font-size: 2em;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+}
+
+button {
+  /*padding: 10px;*/
+  /*margin: 10px;*/
+  border: none;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+.correct {
+  color: '#08a932';
+}
+
+.wrong {
+  color: #da5754;
+}
+
+.attempts {
+  font-size: 2em;
+  margin-top: 30px;
+  min-height: 50px;
+}
+
+#new-game {
+  padding: 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.attempts span:not(:last-child):after {
+  color: black;
+  content: ", ";
+}
+
+.console {
+  width: 200px;
+  margin: 100px auto 50px;
+}
+
+.hangman-word {
+  text-align: center;
+  font-size: 2.5em;
+  letter-spacing: 0.1em;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-weight: bold;
+  color: #b5b5b5;
+}
+
