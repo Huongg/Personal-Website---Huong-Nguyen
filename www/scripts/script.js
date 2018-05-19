@@ -1,7 +1,9 @@
-jQuery(document).ready(function() {
-jQuery('.toggle-nav').click(function(e) {
-jQuery(this).toggleClass('active');
-jQuery('.menu ul').toggleClass('active');
-e.preventDefault();
-});
-});
+console.log("ready");
+$(document).scroll(function(ev) {
+	let scroll = $("html").scrollTop();
+	// console.log(scroll);
+	if (scroll > 10){
+		$(".navbar").addClass("fixed-top");
+	};
+	
+})

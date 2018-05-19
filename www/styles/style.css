@@ -38,44 +38,52 @@ body{
 
  
     /* Main Intro - HEADER*/
-header.masthead {
+#main-content {
   padding-top: 130px;
   padding-bottom: 150px;
   background-color: #e9e5e5!important; 
 
 }
-  header.masthead h1 {
+#main-content h1 {
     font-size: 3rem;
     line-height: 3rem;
     font-family: 'Pacifico', cursive;
     font-weight: bold; 
     font-color: #2c3e50;
-    font-size: 50px;
   }
-  header.masthead h3 {
+#main-content h3 {
     font-size: 1.3rem;
     font-family: 'Lato';
     font-color: #2c3e50; 
   }
 
+@media screen and (max-width: 992px){
+#main-content h1{
+    font-size: 3rem;
+  }
+#main-content h2{
+    font-size: 1.5rem;
+  }
+#main-content h3 {
+    font-size: 0.5rem;
+  }
+}
 
 .img-thumbnail{
-  border-radius: 50% !important;
+  border-radius: 50%;
 }
 
 /* cirlce-button style */
 .circle{
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    margin-right: 30px;
-    position: relative;
-    font-family: Helvetica, Arial Black, sans;
-    text-align:center;
-    line-height: 0;
-    position: relative;
-    padding: 40% 0;
-    margin-top: 30px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-family: Helvetica, Arial Black, sans;
+  line-height: 150px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -91,48 +99,17 @@ header.masthead {
     background-color: #4B8178;
 }
 
-.header-content{
+/*.header-content{
   float: left;
-}
+}*/
 
 .nav-menu{
-  float: left;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-content: space-around;
 }
 
-.nav-menu ul {
-    list-style-type: none;
-    margin-bottom: 10px;
-    padding: 0;
-    overflow: hidden;
-    display: inline;
-    position: relative;
-}
-
-
-.nav-menu li a {
-    text-decoration: none;
-    display: inline;
-    font-size: 17px;
-    font-weight: bold;
-    color: #e9e5e5;
-    text-align: justify;
-} 
-.nav-menu li a:hover {
-  color: black;
-}
-
-.nav-menu li {
-    float: left;
-}
-
-
-.intro-p{
-  position: absolute;
-  float: left;
-}
-.intro-p p{
-  font-family: 'Rubik', sans-serif!important;
-}
 
 
 
@@ -147,25 +124,7 @@ header.masthead {
     .header-content{
         text-align: center!important;
     }
-    .circular--landscape {
-      width: 350px;
-      height: 350px;
-      overflow: hidden;
-      border-radius: 50%;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .circular--landscape img {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    /*.nav-menu li {
-        margin-left: 10px;
-    }*/
-    .nav-menu li a{
-        font-size: 17px;
-    }
+    
 }
 
 

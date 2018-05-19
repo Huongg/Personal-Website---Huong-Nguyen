@@ -36,30 +36,32 @@
 
  <body>
  	<!-- Navigation-bar-->
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top">
-        <a class="navbar-brand" href="#">HUONG NGUYEN</a>
-        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarCollapse" style="">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about-me.html">About Me</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./experiences.html">Experiences</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./projects.html">Projects</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
- 	<header class="masthead">
-	 	<div class="container">
+ 	<header>
+ 		<nav class="navbar navbar-expand-md navbar-dark">
+	        <a class="navbar-brand" href="#">HUONG NGUYEN</a>
+	        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+	          <ul class="navbar-nav">
+	            <li class="nav-item active">
+	              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="./about-me.html">About Me</a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="./experiences.html">Experiences</a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="./projects.html">Projects</a>
+	            </li>
+	          </ul>
+	        </div>
+	      </nav>
+ 	</header>
+	
+ 	<div class="container-fluid" id="main-content">
 	 		<div class="row">
 	 			<div class="col-md-6 text-center">
 	 				<img id="profile-image" class="img-fluid img-thumbnail" src="./assets/profile-photo.jpg">
@@ -70,45 +72,21 @@
 		 				<h2 class="h3-aboutMe">just a quick introduction:</h2>
 		 			</div>
 	 				<div class="nav-menu">
-				    	<nav class="navigation">
-							<ul>
-								<li>
-									<div class="circle" id="about-me">
-											<span><a href="./about-me.html">About Me</a>
-
-												</span>
-							  		</div>
-								</li>
-								<li>
-									<div class="circle" id="experience">
-											<a href="./experiences.html">Experiences</a>
-							  		</div>
-								</li>
-								<li>
-									<div class="circle" id="skills">
-											<a href="./projects.html">Projects</a>
-							  		</div>
-								</li>
-							</ul>
-						</nav>
+							<div class="circle" id="about-me">
+								<span><a href="./about-me.html">About Me</a> </span>
+							</div>
+							
+							<div class="circle" id="experience">
+								<span><a href="./experiences.html">Experiences</a></span>
+							</div>
+								
+							<div class="circle" id="skills">
+								<span><a href="./projects.html">Projects</a></span>
+							</div>						
 					</div>			
-					<!--<div class="intro-p">
-						<p class="flow-text"></p>
-					</div>-->
 	 			</div>
 	 		</div>
-	 	</div>
-	</header>
-	 	<div class="container">
-	 		<div class="row">
-	 			<div class="col-md-12 col-xs-12">
-	 			</div>
-	 		</div>
-	 	</div>
 	</div>	
- 
- 	
-
     
 	<footer>
 	 	<div class="contact-info">
@@ -144,6 +122,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
  </body>
 
 </html>
