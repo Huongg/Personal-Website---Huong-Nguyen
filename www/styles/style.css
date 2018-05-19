@@ -59,20 +59,8 @@ header.masthead {
   }
 
 
-.circular--landscape {
-  display: inline-block;
-  position: relative;
-  width: 28.125em;
-  height: 28.125em;
-  overflow: hidden;
-  border-radius: 50%;
-  text-align: center;
-}
-
-.circular--landscape img {
-  width: auto;
-  height: 150%;
-
+.img-thumbnail{
+  border-radius: 50% !important;
 }
 
 /* cirlce-button style */
