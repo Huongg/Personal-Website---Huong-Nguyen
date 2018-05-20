@@ -1,0 +1,118 @@
+body, div, a {
+    padding:0;
+    margin:0;
+    font-family: 'Iceberg'; 
+}
+
+.calculator {
+	background-color: #999;
+	width: 310px;
+	height: 430px;
+	border: 3px #2c3e50 solid;
+	margin: 30px auto 60px auto;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px solid transparent;
+		
+	-webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.calculator.red{
+	box-shadow: 0 0 15px #fff, 
+					 0 0 110px #fff, 0 0 120px #FF0000, 
+					 0 0 130px #FF0000, 0 0 40px #FF0000, 
+					 0 0 55px #FF0000, 0 0 75px #FF0000;
+}
+
+.calculator.orange{
+	box-shadow: 0 0 15px #fff, 
+					 0 0 110px #fff, 0 0 120px #FF7F00	, 
+					 0 0 130px #FF7F00	, 0 0 40px #FF7F00, 
+					 0 0 55px #FF7F00 , 0 0 75px #FF7F00;
+}
+
+.calculator.yellow{
+	box-shadow: 0 0 15px #fff, 
+					 0 0 110px #fff, 0 0 120px #FFFF00	, 
+					 0 0 130px #FFFF00	, 0 0 40px #FFFF00, 
+					 0 0 55px #FFFF00 , 0 0 75px #FFFF00;
+}
+
+.calculator.green{
+	box-shadow: 0 0 15px #fff, 
+					 0 0 110px #fff, 0 0 120px #00FF00	, 
+					 0 0 130px #00FF00	, 0 0 40px #00FF00, 
+					 0 0 55px #00FF00 , 0 0 75px #00FF00;
+}
+
+.calculator.blue{
+	box-shadow: 0 0 15px #fff, 
+					 0 0 110px #fff, 0 0 120px #0000FF	, 
+					 0 0 130px #0000FF	, 0 0 40px #0000FF, 
+					 0 0 55px #0000FF , 0 0 75px #0000FF;
+}
+
+.calculator.indigo{
+	box-shadow: 0 0 15px #fff, 
+					 0 0 110px #fff, 0 0 120px 	#4B0082	, 
+					 0 0 130px 	#4B0082	, 0 0 40px 	#4B0082, 
+					 0 0 55px 	#4B0082 , 0 0 75px 	#4B0082;
+}
+
+.calculator.violet{
+	box-shadow: 0 0 15px #fff, 
+					 0 0 110px #fff, 0 0 120px 	#9400D3	, 
+					 0 0 130px 	#9400D3	, 0 0 40px 	#9400D3, 
+					 0 0 55px 	#9400D3 , 0 0 75px 	#9400D3;
+}
+
+.calculator a {
+	display: block;
+    float: left;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+	background: linear-gradient(#EDEDED, #DCDCDC);
+    border-radius: 50px;
+    color: #2c3e50;
+}
+
+#numbers, #operators {
+	margin: auto;	
+}
+
+#operators a {
+	width: 45px;
+	height: 45px;
+	font-size: 33px;
+	padding: 2px;
+	margin: 5px 6px;
+}
+
+#numbers a {
+	width: 60px;
+	height: 60px;
+	font-size: 32px;
+	padding: 10px;
+	margin: 5px 15px;
+}
+
+#total {
+    height: 70px;
+    width: 290px;
+    border-radius: 1%;
+    margin:auto;
+    background-color:white;
+    margin-bottom: 5px;
+    text-align: right;
+    font-size: 60px;
+    padding: 0px 5px;
+}
+
+.selected-operator{
+	color: red !important;
+	font-weight: bold;
+}

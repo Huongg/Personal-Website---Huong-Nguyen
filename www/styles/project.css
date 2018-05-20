@@ -1,0 +1,45 @@
+/*PROJECTS*/
+
+.h2-projects{
+    border-bottom: 1px dashed;
+    padding: 10px;
+    display: inline-block;
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-family: 'Pacifico', cursive;
+}
+
+#projects {
+    padding: 50px 15px;
+    border-bottom: 1px solid $border;
+    text-align: center;
+    background-color: #e9e5e5!important; 
+
+    h2 {
+        color: $heading;
+        margin-bottom: 50px;
+    }
+}
+
+.project {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto 30px auto;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 4px;
+}
+.shadow-large {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.08), 0 3px 6px rgba(0,0,0,0.15);
+}
+
+.project-image img {
+    margin-top: 15px;
+    height: 350px;
+    border-radius: 5px;
+}
+
+.project-info a{
+  margin-bottom: 15px;
+}
