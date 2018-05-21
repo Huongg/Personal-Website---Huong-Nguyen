@@ -406,14 +406,6 @@ footer h4, p{
 
 @media screen and (max-width: 992px){
 
-  /*
-  #contact-info{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    justify-content: center;
-  }*/
-
   .icon {
     height: 40px;
     width: 40px;
@@ -423,24 +415,16 @@ footer h4, p{
   }
 
   .block {
-    margin: 1em;
-    /*display: flex;
-    flex-direction: row;
-    text-align: center;
-    color: white;
-    margin: 1px 0;
-    padding: 0;*/
+    margin: 0.5em;
   }
-  .block p, .block h4{
+  .block p, .block h5{
     display: none;
   }
 
   .block p{
     font-weight: bold;
   }
-  /*.block .hidden{
-    display: none;
-  }*/
+  
 
   footer h4, footer p{
     size: 5px;
