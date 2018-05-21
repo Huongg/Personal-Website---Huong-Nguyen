@@ -406,6 +406,7 @@ footer h4, p{
 
 @media screen and (max-width: 992px){
 
+  
   #contact-info{
     display: flex;
     flex-direction: column;
@@ -422,8 +423,8 @@ footer h4, p{
   }
 
   .block {
-    /*display: flex;
-    flex-direction: row;*/
+    display: flex;
+    flex-direction: row;
     text-align: center;
     color: white;
     margin: 1px 0;
