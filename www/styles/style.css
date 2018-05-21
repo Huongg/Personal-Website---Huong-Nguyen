@@ -406,40 +406,41 @@ footer h4, p{
 
 @media screen and (max-width: 992px){
 
-  
+  /*
   #contact-info{
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
-  }
+  }*/
 
   .icon {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     margin-bottom: 10px;
     margin-top: 10px;
     float: left;
   }
 
   .block {
-    display: flex;
+    margin: 1em;
+    /*display: flex;
     flex-direction: row;
     text-align: center;
     color: white;
     margin: 1px 0;
-    padding: 0;
+    padding: 0;*/
   }
   .block p, .block h4{
-    display: inline;
+    display: none;
   }
 
   .block p{
     font-weight: bold;
   }
-  .block .hidden{
-    display: inline;
-  }
+  /*.block .hidden{
+    display: none;
+  }*/
 
   footer h4, footer p{
     size: 5px;
