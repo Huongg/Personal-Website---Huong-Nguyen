@@ -14,7 +14,7 @@
     padding: 50px 15px;
     border-bottom: 1px solid $border;
     text-align: center;
-    background-color: #e9e5e5!important; 
+    background-color: #e9e5e5; 
 
     h2 {
         color: $heading;
