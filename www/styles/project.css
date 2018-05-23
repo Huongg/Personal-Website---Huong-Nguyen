@@ -61,14 +61,34 @@
 }
 .btn-5:hover {
   animation: blinds 0.75s linear forwards;
-  background: linear-gradient(0deg, #7cf07f 25%, transparent 25%) 0 0/0.5em 0.5em, linear-gradient(0deg, #88d6f3 50%, transparent 50%) 0 0/1em 1em;
-  color: #f07ced;
+  background: linear-gradient(0deg, #7cf07f 25%, transparent 25%) 0 0/0.5em 0.5em, linear-gradient(0deg, #7ca3dd 50%, transparent 50%) 0 0/1em 1em;
+  color: #2c3e50;
 }
 
 @keyframes blinds {
   100% {
     background-position: 0 0, 0 -3em;
     background-size: 0 0, 1em 6em;
+  }
+
+}
+
+@media screen and (max-width: 600px){
+  .btn-5 {
+  color: #2c3e50;
+  }
+  .btn-5:hover {
+    animation: blinds 0.75s linear forwards;
+    background: linear-gradient(0deg, #7cf07f 25%, transparent 25%) 0 0/0.5em 0.5em, linear-gradient(0deg, #7ca3dd 50%, transparent 50%) 0 0/1em 1em;
+    color: #2c3e50;
+  }
+
+  @keyframes blinds {
+    100% {
+      background-position: 0 0, 0 -3em;
+      background-size: 0 0, 1em 6em;
+    }
+
   }
 }
 

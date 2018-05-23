@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
  <head>
+ 	<!-- Bootstrap - Mobile first -->
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
  	<!--Link HTML and CSS -->
  	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+ 	<link rel="stylesheet" type="text/css" href="./styles/about-me.css">
+ 	<!-- <link rel="stylesheet" type="text/css" href="./styles/project.css"> -->
 
- 	<!-- Bootstrap -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-	<!-- Bootstrap - Mobile first -->
-	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- Google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -34,30 +36,37 @@
 
  <body>
  	<!-- Navigation -->
-    <nav class="navbar-menu">
-	  <div class="container-fluid">
-	  	<div class="row">
-	  		<div class="col-xs-12 col-md-6 clearfix" id="website-name">
-			      <h1>HUONG NGUYEN</h1>
-	  		</div>
-	  		<div class="col-xs-12 col-md-6 clearfix" id="website-bar">
-	  			<ul class="navbar-nav">
-			      <li class="active"><a href="./index.html">Home</a></li>
-			      <li><a href="./about-me.html">About Me</a></li>
-			      <li><a href="./experiences.html">Experiences</a></li>
-			      <li><a href="./projects.html">Projects</a></li>
-			    </ul>
-	  		</div>
-	  	</div>
-	  </div>
-	</nav>
+    <!-- Navigation-bar-->
+ 	<header>
+ 		<nav class="navbar navbar-expand-md navbar-dark">
+	        <a class="navbar-brand" href="#">HUONG NGUYEN</a>
+	        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+	          <ul class="navbar-nav">
+	            <li class="nav-item active">
+	              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="./about-me.html">About Me</a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="./experiences.html">Experiences</a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="./projects.html">Projects</a>
+	            </li>
+	          </ul>
+	        </div>
+	      </nav>
+ 	</header>
 
- 
  	<!-- About Section -->	
-	<div class="jumbotron">
-		<div class="container Intro">
+	<!-- <div class="jumbotron"> -->
+		<div class="container" id="intro">
 		  <div class="row">
-			<div id="About-Us" class="col-md-8 text-center">
+			<div id="About-Us" class="col-md-12 text-center">
 				<h2 class="h2-aboutme">About Me</h2>
 				<div class="about-box">		
 					<p class="flow-text">To begin with, here is a quick introduction about me. Originating from Vietnam, I have recently moved back to London to settle down with my partner, also with the added perk of enjoying the Great British Weather.
@@ -68,11 +77,37 @@
 					<br/><br/>
 					I have worked with some pretty cool brands, including Coca-Cola, Kimberly Clark, Vinamilk, and now I'm looking to find my next career milestone within the technology industry.
 					</p>
-					<a class="btn btn-primary btn-lg" href="./assets/HUONGNGUYEN-CV.pdf" role="button">Download my CV</a>
+					<a href="./assets/HUONGNGUYEN-CV.pdf"><button class="btn btn-5">Download my CV</button></a>
 
 				</div>
 			</div>
-				<div class="col-md-4 text-center" id="right-col">
+
+			<div class="col-md-12 text-center">
+				<div id="snaps" class="row align-c snaps" style="visibility: visible; opacity: 1;">
+
+					<a id="snaps-1" target="_blank" href=https://www.instagram.com/p/BhBrxwCFV8i/?hl=en&taken-by=huongg style="visibility: visible; top: 0px; opacity: 1;">
+						<img class="preload" src="./assets/skiing.jpg" alt="my skiing holiday">
+					</a>
+					<a id="snaps-2" target="_blank" href=https://www.instagram.com/p/BTLBSjzA-J6/?hl=en&taken-by=huongg style="visibility: visible; top: 0px; opacity: 1;">
+						<img class="preload" src="./assets/southafrica.jpg" alt="me when i was younger">
+					</a>
+					<a id="snaps-3" target="_blank" href=https://www.instagram.com/p/BeYplvyFiTq/?hl=en&taken-by=huongg style="visibility: visible; top: 0px; opacity: 1;">
+						<img class="preload" src="./assets/coding.jpg" alt="my coding time">
+					</a>
+					<a id="snaps-4" target="_blank" href="https://www.instagram.com/p/BgLmFSFA8nN/?hl=en&taken-by=huongg" style="visibility: visible; top: 0px; opacity: 1;">
+						<img class="preload" src="./assets/garden.jpg" alt="nerf gun wars">
+					</a>
+					<a id="snaps-5" target="_blank" href="https://www.instagram.com/p/BfjOEzNl_RG/?hl=en&taken-by=huongg" style="visibility: visible; top: 0px; opacity: 1;">
+						<img class="preload" src="./assets/minihouse.jpg" alt="my macbook air">
+					</a>
+					<a id="snaps-6" target="_blank" href="https://www.instagram.com/p/BXKxyp2FIaH/?hl=en&taken-by=huongg" style="visibility: visible; top: 0px; opacity: 1;">
+						<img class="preload" src="./assets/running.png" alt="i love hamburgers">
+					</a>
+	
+				</div>
+			</div>
+			
+				<!-- <div class="col-md-4 text-center" id="right-col">
 					<h3 class="h3-aboutme">Education & Training</h3>
 					<ul>
 						<li>
@@ -88,66 +123,107 @@
 					
 					<h3 class="h3-aboutme">Skills</h3>
 					<div id="aboutMe-skills">
-						<ul>
-				            <li>HTML</li>
-				            <li>CSS</li>
-				            <li>jQuery</li>
-				            <li>Javascript</li>
-				            <li>Bootstrap</li>
-				            <li>SASS</li>
-				            <li>GitHub</li>
-				            <li>Customer Service</li>
-				            <li>Social Media Marketing</li>
-				            <li>Digital Marketing</li>
-				            <li>Advertising</li>
-				            <li>Wireframing</li>
-				            <li>UX</li>
-				            <li>CRM</li>
-				            <li>Server Management</li>
-				            
-				        </ul>
+						<span>HTML</span>
+						<span>CSS</span>
+						<span>jQuery</span>
+						<span>JavascriptL</span>
+						<span>Bootstrap</span>
+						<span>Github</span>
+						<span>Customer Service</span>
+						<span>Social Media Marketing</span>
+						<span>Digital Marketing</span>
+						<span>Advertising</span>
+						<span>Wireframing</span>
+						<span>UX</span>
+						<span>CRM</span>
+						<span>Server Management</span>
 				    </div>
-				</div>
+				</div> -->
 		  </div>
+
+		  <div class="col-md-12">
+		  	<h3 class="h2-aboutme text-center">My Skills </h3>
+		  	<ul class="chart">
+				<li class="axis">
+					<div class="label">Master</div>
+					<div class="label">All Star</div>
+					<div class="label">Intermediate</div>
+					<div class="label">Rookie</div>
+					<div class="label">Beginer</div></li>
+				<li class="bar teal" style="height: 90%;" title="90">
+				<div class="percent">90<span>%</span></div>
+				<div class="skill">CRM</div></li>
+					<li class="bar salmon" style="height: 80%;" title="80">
+				<div class="percent">80<span>%</span></div>
+				<div class="skill">HTML</div></li>
+					<li class="bar peach" style="height: 70%;" title="70">
+				<div class="percent">70<span>%</span></div>
+				<div class="skill">CSS</div></li>
+					<li class="bar lime" style="height: 60%;" title="60">
+				<div class="percent">60<span>%</span></div>
+				<div class="skill">Javascript</br>jQuery</div></li>
+					<li class="bar grape" style="height: 40%;" title="40">
+				<div class="percent">40<span>%</span></div>
+				<div class="skill">Gardening</div></li>
+			</ul>
+		  </div>
+		  
+			<!-- </div>
+ -->			<!-- </section> -->
 		</div>
-	</div>
+	<!-- </div> -->
 
     
-	 <footer>
-	 	<div class="contact-info">
+	<footer>
 		 	<div class="container-fluid">
 		 		<div class="row">
-		 			<div class="col-xs-3 col-md-3 text-center clearfix" id="block">
-		 				<img class="icon" src="./assets/phone-call.png">
-		 				<p>give me</p>
-		 				<h4>A CALL</h4>
-		 				<p>07423415898</p>
-		 			</div>
-		 			<div class="col-xs-3 col-md-3 text-center clearfix"  id="block">
-		 				<img class="icon" src="./assets/waving-hand.png">
-		 				<p>say hello</p>
-		 				<h4>BY EMAIL</h4>
-		 				<p>huongg1409@gmail.com</p>
-		 			</div>
-		 			<div class="col-xs-3 col-md-3 text-center clearfix"  id="block">
-		 				<a href="https://github.com/Huongg/"><img class="icon" src="./assets/github.png"></a>
-		 				<p>check out my</p>
-		 				<h4>GITHUB</h4>
-		 			</div>
-		 			<div class="col-xs-3 col-md-3 text-center clearfix"  id="block">
-		 				<a href="https://www.linkedin.com/in/huongg/"><img class="icon" src="./assets/linkedin.png"></a>
-		 				<p>follow me on</p>
-		 				<h4>LINKEDIN</h4>
-		 			</div>
-		 			
+		 			<div class="col-md-12">
+		 			  <div id="contact-info">
+		 			  	<a href="mailto:huongg1409@gmail.com">
+		 			  		<div class="block" id="phone-call">
+				 				<img class="icon" src="./assets/gmail.png">
+				 				<p>give me</p>
+				 				<h5>A MESSAGE</h5>
+				 			</div>
+		 			  	</a>
+		 				
+		 				<a href="https://codepen.io/huongg/">
+		 					<div class="block" id="hello">
+				 				<img class="icon" src="./assets/codepen.png">
+				 				<p>more on my</p>
+				 				<h5>CODEPEN</h5>
+				 				
+				 			</div>
+		 				</a>
+			 			
+			 			<a href="https://github.com/huongg">
+			 				<div class="block" id="github">
+				 				<a href="https://github.com/Huongg/"><img class="icon" src="./assets/github.png"></a>
+				 				<p>check out my</p>
+				 				<h5>GITHUB</h5>
+				 			</div>
+			 			</a>
+			 			
+
+			 			<a href="https://www.linkedin.com/in/huongg/">
+			 				<div class="block" id="linkedin">
+				 				<a href="https://www.linkedin.com/in/huongg/"><img class="icon" src="./assets/linkedin.png"></a>
+				 				<p>follow me on</p>
+				 				<h5>LINKEDIN</h5>
+				 			</div>
+			 			</a>
+			 			
+			 		  </div>
+			 		</div>		 			
 		 		</div>
 	 		</div>
-	 	</div>
-	 </footer>
+
+	 </footer>  
 
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="scripts/script.js"></script>
  </body>
 
 </html>

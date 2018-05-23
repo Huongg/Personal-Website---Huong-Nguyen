@@ -2,7 +2,7 @@
 <html lang="en">
  <head>
  	<!--Link HTML and CSS -->
- 	<link rel="stylesheet" type="text/css" href="style.css">
+ 	<link rel="stylesheet" type="text/css" href="./styles/style.css">
 
  	<!-- Bootstrap -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,29 +15,50 @@
 	<link href="https://fonts.googleapis.com/css?family=Cambo" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
 
-	<title></title>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116479273-1"></script>
+	<script>
+	  // Google Analytics
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-116479273-1');
+	</script>
+
+	<title>Wasteless App</title>
+	<meta name="description" content="Portfolio and personal website of Huong Nguyen, an aspiring front-end developer, UX designer and experienced advertising executive">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
  </head>
 
 
  <body>
  	<!-- Navigation -->
-    <nav class="navbar-menu">
-	  <div class="container-fluid">
-	  	<div class="row">
-	  		<div class="col-xs-12 col-md-6 clearfix" id="website-name">
-			      <h1>HUONG NGUYEN</h1>
-	  		</div>
-	  		<div class="col-xs-12 col-md-6 clearfix" id="website-bar">
-	  			<ul class="navbar-nav">
-			      <li class="active"><a href="./index.html">Home</a></li>
-			      <li><a href="./about-me.html">About Me</a></li>
-			      <li><a href="./experiences.html">Experiences</a></li>
-			      <li><a href="./projects.html">Projects</a></li>
-			    </ul>
-	  		</div>
-	  	</div>
-	  </div>
-	</nav>
+    <!-- Navigation-bar-->
+ 	<header>
+ 		<nav class="navbar navbar-expand-md navbar-dark">
+	        <a class="navbar-brand" href="#">HUONG NGUYEN</a>
+	        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+	          <ul class="navbar-nav">
+	            <li class="nav-item active">
+	              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="./about-me.html">About Me</a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="./experiences.html">Experiences</a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="./projects.html">Projects</a>
+	            </li>
+	          </ul>
+	        </div>
+	      </nav>
+ 	</header>
 
     <!--Main Page-->
     <div class="container" id="wasteless">
@@ -124,36 +145,39 @@
       
     
 	<footer>
-	 	<div class="contact-info">
 		 	<div class="container-fluid">
 		 		<div class="row">
-		 			<div class="col-xs-3 col-md-3 text-center clearfix" id="block">
-		 				<img class="icon" src="./assets/phone-call.png">
-		 				<p>give me</p>
-		 				<h4>A CALL</h4>
-		 				<p>07423415898</p>
-		 			</div>
-		 			<div class="col-xs-3 col-md-3 text-center clearfix"  id="block">
-		 				<img class="icon" src="./assets/waving-hand.png">
-		 				<p>say hello</p>
-		 				<h4>BY EMAIL</h4>
-		 				<p>huongg1409@gmail.com</p>
-		 			</div>
-		 			<div class="col-xs-3 col-md-3 text-center clearfix"  id="block">
-		 				<a href="https://github.com/Huongg/"><img class="icon" src="./assets/github.png"></a>
-		 				<p>check out my</p>
-		 				<h4>GITHUB</h4>
-		 			</div>
-		 			<div class="col-xs-3 col-md-3 text-center clearfix"  id="block">
-		 				<a href="https://www.linkedin.com/in/huongg/"><img class="icon" src="./assets/linkedin.png"></a>
-		 				<p>follow me on</p>
-		 				<h4>LINKEDIN</h4>
-		 			</div>
-		 			
+		 			<div class="col-md-12">
+		 			  <div id="contact-info">
+		 				<div class="block" id="phone-call">
+			 				<img class="icon" src="./assets/phone-call.png">
+			 				<p>give me</p>
+			 				<h4>A CALL</h4>
+			 				<p class="hidden">on</p>
+			 				<p>07423415898</p>
+			 			</div>
+			 			<div class="block" id="hello">
+			 				<img class="icon" src="./assets/waving-hand.png">
+			 				<p>say hello</p>
+			 				<h4>BY EMAIL</h4>
+			 				<p>huongg1409@gmail.com</p>
+			 			</div>
+			 			<div class="block" id="github">
+			 				<a href="https://github.com/Huongg/"><img class="icon" src="./assets/github.png"></a>
+			 				<p>check out my</p>
+			 				<h4>GITHUB</h4>
+			 			</div>
+			 			<div class="block" id="linkedin">
+			 				<a href="https://www.linkedin.com/in/huongg/"><img class="icon" src="./assets/linkedin.png"></a>
+			 				<p>follow me on</p>
+			 				<h4>LINKEDIN</h4>
+			 			</div>
+			 		  </div>
+			 		</div>		 			
 		 		</div>
 	 		</div>
-	 	</div>
-	 </footer>
+
+	 </footer>  
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

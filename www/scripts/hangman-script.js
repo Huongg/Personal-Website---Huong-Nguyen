@@ -1,4 +1,4 @@
-/** Hangman **/
+	/** Hangman **/
 
 
 $(document).ready(function() {
@@ -8,6 +8,8 @@ $(document).ready(function() {
 		startNewGame();	
 		$("#new-game").removeClass("visible");
 		$("#new-game").addClass("invisible");
+		$("#game-body").removeClass("hidden");
+		$(".box-1").css({"background-color": " "});
 
 		let arrOfInviClass = [".letter", "#guess", "#used-letter", ".remaining-guesses"];
 		for (i=0; i<arrOfInviClass.length; i++){
@@ -84,7 +86,7 @@ function updateNumber (token) {
 		case 6:
 			context.beginPath();
 			context.lineWidth = 9;
-			context.strokeStyle = 'purple';
+			context.strokeStyle =" #2c3e50";
 			context.moveTo(100,300);
 			context.lineTo(300,300);
 			context.stroke();
@@ -93,7 +95,7 @@ function updateNumber (token) {
 		case 5:
 			context.beginPath();
 			context.lineWidth = 5;
-			context.strokeStyle = 'purple';
+			context.strokeStyle = '#2c3e50';
 			context.moveTo(150,300);
 			context.lineTo(150,100);
 			context.stroke();
@@ -102,7 +104,7 @@ function updateNumber (token) {
 		case 4:
 			context.beginPath();
 			context.lineWidth = 5;
-			context.strokeStyle = 'purple';
+			context.strokeStyle = '#2c3e50';
 			context.moveTo(147,100);
 			context.lineTo(250,100);
 			context.lineTo(250,150);
@@ -112,7 +114,7 @@ function updateNumber (token) {
 		case 3:
 			context.beginPath();
 			context.lineWidth = 1;
-			context.strokeStyle = 'purple';
+			context.strokeStyle = '#2c3e50';
 			context.arc(250, 170, 20, 0, Math.PI*2, true);
 			context.stroke();
 			context.closePath();
@@ -120,7 +122,7 @@ function updateNumber (token) {
 		case 2:
 			context.beginPath();
 			context.lineWidth = 1;
-			context.strokeStyle = 'purple';
+			context.strokeStyle = '#2c3e50';
 			context.moveTo(250, 190);
 			context.lineTo(250, 240);
 			context.stroke();
@@ -129,7 +131,7 @@ function updateNumber (token) {
 		case 1: 
 			context.beginPath();
 			context.lineWidth = 1;
-			context.strokeStyle = 'purple';
+			context.strokeStyle = '#2c3e50';
 			context.moveTo(225, 260);
 			context.lineTo(250, 240);
 			context.lineTo(275, 260);
@@ -139,7 +141,7 @@ function updateNumber (token) {
 		case 0:
 			context.beginPath();
 			context.lineWidth = 1;
-			context.strokeStyle = 'purple';
+			context.strokeStyle = '#2c3e50';
 			context.moveTo(235, 210);
 			context.lineTo(250, 200);
 			context.lineTo(265, 210);

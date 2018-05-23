@@ -1,0 +1,227 @@
+/*About Section*/
+#intro{
+  background-color: #e9e5e5!important;
+  margin-bottom: 7%;
+  margin-top: 10%;
+}
+#intro p{
+  font-family: 'Rubik', sans-serif!important;
+}
+
+#intro ul{
+  list-style-type: none;
+}
+/*.text-center {
+    text-align: center!important;
+}*/
+.about-box {
+    padding: 10px;
+    background-color: #e9e5e5;
+    height: 280px;
+    text-align: center;
+    margin-bottom: 180px;
+}
+
+.h2-aboutme{
+    border-bottom: 1px dashed;
+    padding: 10px;
+    display: inline-block;
+    font-size: 45px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-family: 'Pacifico', cursive;
+}
+.h3-aboutme{
+    border-bottom: 1px dashed;
+    padding: 10px;
+    display: inline-block;
+    font-size: 27px;
+    margin-bottom: 25px;
+    color: #2c3e50;
+    font-family: 'Pacifico', cursive;
+}
+#right-col p{
+  font-size: 18px;
+  text-align: center;
+}
+
+
+/*#aboutMe-skills ul{
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+    }*/
+
+#aboutMe-skills span {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: space-between;
+        display: inline!important;
+        margin: 12px 6px;
+        padding: 2px 2px;
+        background: #CBC8C8;
+        font-size: 1.2em;
+        width: 100%;
+        border-radius: 2px;
+    }
+
+
+.btn {
+  background: none;
+  border: 2px solid;
+  border-bottom-width: 4px;
+  font: inherit;
+  letter-spacing: inherit;
+  margin: 1em;
+  padding: 0.5em 2em;
+  text-transform: inherit;
+  transition: color 1s;
+}
+
+.btn-5 {
+  color: #2c3e50;
+}
+.btn-5:hover {
+  animation: blinds 0.75s linear forwards;
+  background: linear-gradient(0deg, #7cf07f 25%, transparent 25%) 0 0/0.5em 0.5em, linear-gradient(0deg, #7ca3dd 50%, transparent 50%) 0 0/1em 1em;
+  color: #2c3e50;
+}
+
+@keyframes blinds {
+  100% {
+    background-position: 0 0, 0 -3em;
+    background-size: 0 0, 1em 6em;
+  }
+
+}
+.chart { width: 100%; }
+
+.chart li {
+  border-radius: 4px 4px 0 0; /* Remember vendor prefixes */
+  box-shadow: 0 1px 0 0 rgba(255,255,255,.6) inset; /* Remember vendor prefixes */
+  display: block;
+  height: 100px;
+  padding: 20px 0;
+  position: relative;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+.chart .axis { 
+  display: none;
+  top: 35px;
+  width: 15%;
+ }
+
+.chart .label {
+  background: #eaeaea;
+  margin: -.6em 0 65px 0;
+}
+
+.chart .percent {
+  font-size: 30px;
+  letter-spacing: -3px;
+  opacity: .4;
+  width: 100%;
+}
+
+.chart .teal {
+background: #4ecdc4;
+background-image: linear-gradient(#76d8d1, #4ecdc4 70%);
+border: 1px solid #4ecdc4;
+}
+
+.chart .salmon {
+background: #FA8072;
+background-image: linear-gradient(#d89976, #FA8072 70%);
+border: 1px solid #FA8072;
+}
+
+.chart .peach {
+background: #FFE5B4;
+background-image: linear-gradient(#ffe9b3, #FFE5B4 70%);
+border: 1px solid #FFE5B4 ;
+}
+
+.chart .lime {
+background:  #bfff00;
+background-image: linear-gradient(#ffff00,  #bfff00 70%);
+border: 1px solid  #bfff00 ;
+}
+
+.chart .grape {
+background: #ab64f4;
+background-image: linear-gradient(#ab64f4,  #ab64f4 70%);
+border: 1px solid  #ab64f4 ;
+}
+
+.chart span { font-size: 30px;  }
+
+
+.chart .skill {
+    bottom: 20px;
+    font-size: 16px;
+    margin-left: 10%;
+  }
+
+  img {
+    position: relative;
+    margin-bottom: 2em;
+    height: 160px;
+    width: 140px;
+}
+@media (min-width: 700px) {
+  .chart {
+    height: 420px;
+  }
+  .chart li {
+    display: inline-block;
+    height: 425px;
+    margin: 0 1.8% 0 0;
+    width: 14%;
+  }
+  .chart .axis {
+    display: inline-block;
+  }
+  .chart .percent {
+    opacity: 0.3;
+    position: absolute;
+    font-size: 35px;
+  }
+  .chart .skill {
+    bottom: 20px;
+    font-size: 16px;
+    position: absolute;
+  }
+}
+
+@media (min-width: 1000px) {
+  .chart .percent {
+    font-size: 60px;
+  }
+
+}
+
+
+.snaps a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+    margin-right: 2em;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+@media (max-width: 1200px) {
+
+img {
+    position: relative;
+    margin-bottom: 2em;
+    height: 130px;
+    width: 110px;
+}
+
+}
