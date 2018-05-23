@@ -1,11 +1,11 @@
 /*About Section*/
 #intro{
-  background-color: #e9e5e5!important;
+  background-color: #e9e5e5;
   margin-bottom: 7%;
   margin-top: 10%;
 }
 #intro p{
-  font-family: 'Rubik', sans-serif!important;
+  font-family: 'Rubik', sans-serif;
 }
 
 #intro ul{
@@ -17,9 +17,7 @@
 .about-box {
     padding: 10px;
     background-color: #e9e5e5;
-    height: 280px;
     text-align: center;
-    margin-bottom: 180px;
 }
 
 .h2-aboutme{
@@ -40,18 +38,13 @@
     color: #2c3e50;
     font-family: 'Pacifico', cursive;
 }
-#right-col p{
+/*#right-col p{
   font-size: 18px;
   text-align: center;
-}
+}*/
 
 
-/*#aboutMe-skills ul{
-        display: block;
-        margin: 0 auto;
-        padding: 0;
-    }*/
-
+/*
 #aboutMe-skills span {
         display: flex;
         flex-wrap: wrap-reverse;
@@ -64,7 +57,7 @@
         width: 100%;
         border-radius: 2px;
     }
-
+*/
 
 .btn {
   background: none;
@@ -76,6 +69,7 @@
   padding: 0.5em 2em;
   text-transform: inherit;
   transition: color 1s;
+  display:inline-block;
 }
 
 .btn-5 {
@@ -94,7 +88,14 @@
   }
 
 }
-.chart { width: 100%; }
+
+
+img {
+    position: relative;
+    margin-bottom: 2em;
+    height: 140px;
+    width: 125px;
+}
 
 .chart li {
   border-radius: 4px 4px 0 0; /* Remember vendor prefixes */
@@ -164,19 +165,15 @@ border: 1px solid  #ab64f4 ;
     margin-left: 10%;
   }
 
-  img {
-    position: relative;
-    margin-bottom: 2em;
-    height: 160px;
-    width: 140px;
-}
-@media (min-width: 700px) {
+
+  
+@media (min-width: 768px) {
   .chart {
-    height: 420px;
+    height: 380px;
   }
   .chart li {
     display: inline-block;
-    height: 425px;
+    /*height: 425px;*/
     margin: 0 1.8% 0 0;
     width: 14%;
   }
@@ -193,6 +190,53 @@ border: 1px solid  #ab64f4 ;
     font-size: 16px;
     position: absolute;
   }
+
+  img{
+    height: 10px;
+    width: 10px;
+  }
+
+}
+
+@media (min-width: 375px) {
+  .chart {
+    height: 250px;
+  }
+  .chart li {
+    display: inline-block;
+    /*height: 425px;*/
+    margin: 0 1% 0 0;
+    width: 17%;
+  }
+  .chart .axis {
+    display: none;
+  }
+  .chart .percent {
+    opacity: 0.3;
+    position: absolute;
+    font-size: 20px;
+  }
+
+  .chart .percent span {
+    font-size: 22px;
+  }
+  .chart .skill {
+    bottom: 20px;
+    font-size: 7px;
+    font-weight: bold;
+    position: absolute;
+    text-orientation: sideways-right;
+  }
+
+  img{
+    height: 10px;
+    width: 10px;
+  }
+
+  .container{
+  padding-top: 35%;
+}
+
 }
 
 @media (min-width: 1000px) {
@@ -203,7 +247,7 @@ border: 1px solid  #ab64f4 ;
 }
 
 
-.snaps a {
+.gallery a {
   display: flex;
   flex-direction: row;
   justify-content: center;
