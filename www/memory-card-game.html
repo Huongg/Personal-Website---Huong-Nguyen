@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ 	
+ 	<!-- Bootstrap -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+	<!--Link HTML and CSS -->
+ 	<link rel="stylesheet" type="text/css" href="./styles/style.css">
+ 	<link rel="stylesheet" type="text/css" href="./styles/memory-card-game.css">
+
+	<!-- Bootstrap - Mobile first -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Google fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cambo" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116479273-1"></script>
+	<script>
+	  // Google Analytics
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-116479273-1');
+	</script>
+	
+	<title>Huong Nguyen</title>
+	<meta name="description" content="Portfolio and personal website of Huong Nguyen, an aspiring front-end developer, UX designer and experienced advertising executive">
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8">
+ </head>
+
+
+ <body>
+ 	<!-- Navigation-bar-->
+ 	<!-- <header>
+ 		<nav class="navbar navbar-expand-md navbar-dark">
+	        <a class="navbar-brand" href="#">HUONG NGUYEN</a>
+	        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+	          <span class="navbar-toggler-icon"></span>
+	        </button>
+	        <div class="navbar-collapse collapse" id="navbarCollapse" style="">
+	          <ul class="navbar-nav">
+	            <li class="nav-item active">
+	              <a class="nav-link" href="./index.html">Home</a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="./about-me.html">About Me</a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="./experiences.html">Experiences</a>
+	            </li>
+	            <li class="nav-item">
+	              <a class="nav-link" href="./projects.html">Projects</a>
+	            </li>
+	          </ul>
+	        </div>
+	      </nav>
+ 	</header> -->
+	
+	<div class="game">
+ 	  <!-- <div class="row">
+ 		<div class="col-md-12"> -->
+ 			<div class="row cf">
+				<div class="two col">
+					<div id="left-bg" class="background">
+						<a href ="./projects.html"><div class="left-arrow"></div></a>
+					</div>
+				</div>
+		    <h1>Memory Game</h1>
+
+		  <section class="score-panel">
+		    <!-- Move Counter -->
+		   	<div class="score-panel-container">
+		   		<p class="moves_text">Your Move:</p>
+			    <span class="moves"> 0</span> 
+
+			    <!-- Restart button -->
+			    <div class="restart">
+			  		<!-- <i>Reset</i> -->
+			  	</div>
+
+			    <!-- Timer -->
+			    <div class="timer_container">
+			  		<ul class="timer">
+			  			<li class="title">Your time:</li>
+				        <!-- <li class="hours"></li>
+				        <li class="colon-one"></li> -->
+				        <li class="minutes"></li>
+				        <li class="colon"></li>
+				        <li class="seconds"></li>
+			      	</ul>
+		  		</div>
+		   	</div>
+
+		   	<!-- The Modal -->
+		    <div class="modal">
+		      <div class="modal_content">
+		        <p class="congratulatory_message"></p>
+		        <p class="time_taken"></p>
+		        <p class="moves_taken"></p>
+
+		        <div class="play_again_button_container">
+		          <button class="play_again_button">Play again</button>
+		        </div>
+		      </div>
+		    </div>
+		    
+	  	  </section>
+		  <div class="card-deck">
+			<div class="card"  id="card-1">
+
+			</div>
+			<div class="card" id="card-2">
+				
+			</div>
+			<div class="card" id="card-3">
+				
+			</div>
+			<div class="card" id="card-4">
+				
+			</div>
+			<div class="card" id="card-5">
+				
+			</div>
+			<div class="card" id="card-6">
+				
+			</div>
+			<div class="card" id="card-7">
+				
+			</div>
+			<div class="card" id="card-8">
+				
+			</div>
+			<div class="card" id="card-9">
+				
+			</div>
+			<div class="card" id="card-10">
+				
+			</div>
+			<div class="card" id="card-11">
+				
+			</div>
+			<div class="card" id="card-12">
+				
+			</div>
+		  </div>
+
+
+ 	<!-- 	</div>
+      </div> -->
+  	</div>	
+    
+	<footer>
+		 <!-- 	<div class="container-fluid">
+		 		<div class="row">
+		 			<div class="col-md-12"> -->
+		 			  <div id="contact-info">
+		 			  	<a href="mailto:huongg1409@gmail.com">
+		 			  		<div class="block" id="phone-call">
+				 				<img class="icon" src="./assets/gmail.png">
+				 				<p>give me</p>
+				 				<h5>A MESSAGE</h5>
+				 			</div>
+		 			  	</a>
+		 				
+		 				<a href="https://codepen.io/huongg/">
+		 					<div class="block" id="hello">
+				 				<img class="icon" src="./assets/codepen.png">
+				 				<p>more on my</p>
+				 				<h5>CODEPEN</h5>
+				 				
+				 			</div>
+		 				</a>
+			 			
+			 			<a href="https://github.com/huongg">
+			 				<div class="block" id="github">
+				 				<img class="icon" src="./assets/github.png"></a>
+				 				<p>check out my</p>
+				 				<h5>GITHUB</h5>
+				 			</div>
+			 			</a>
+			 			
+
+			 			<a href="https://www.linkedin.com/in/huongg/">
+			 				<div class="block" id="linkedin">
+				 				<img class="icon" src="./assets/linkedin.png"></a>
+				 				<p>follow me on</p>
+				 				<h5>LINKEDIN</h5>
+				 			</div>
+			 			</a>
+			 			
+			 		  </div>
+			<!--  		</div>		 			
+		 		</div>
+	 		</div>
+ -->
+	 </footer>  
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="scripts/memory-card-game.js"></script>
+ </body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,8 +1,8 @@
 /*About Section*/
 #intro{
   background-color: #e9e5e5;
-  margin-bottom: 7%;
-  margin-top: 10%;
+  margin-top: 15%;
+  
 }
 #intro p{
   font-family: 'Rubik', sans-serif;
@@ -11,25 +11,23 @@
 #intro ul{
   list-style-type: none;
 }
-/*.text-center {
-    text-align: center!important;
-}*/
+
 .about-box {
-    padding: 10px;
+  /*margin-top: %;*/
+    /*padding: 10px;*/
     background-color: #e9e5e5;
     text-align: center;
 }
 
 .h2-aboutme{
     border-bottom: 1px dashed;
-    padding: 10px;
     display: inline-block;
     font-size: 45px;
     margin-bottom: 25px;
     color: #2c3e50;
     font-family: 'Pacifico', cursive;
 }
-.h3-aboutme{
+/*.h3-aboutme{
     border-bottom: 1px dashed;
     padding: 10px;
     display: inline-block;
@@ -37,7 +35,7 @@
     margin-bottom: 25px;
     color: #2c3e50;
     font-family: 'Pacifico', cursive;
-}
+}*/
 /*#right-col p{
   font-size: 18px;
   text-align: center;
@@ -65,8 +63,8 @@
   border-bottom-width: 4px;
   font: inherit;
   letter-spacing: inherit;
-  margin: 1em;
-  padding: 0.5em 2em;
+  margin: 2em 1em;
+  padding: 0.8em 2em;
   text-transform: inherit;
   transition: color 1s;
   display:inline-block;
@@ -101,8 +99,9 @@ img {
   border-radius: 4px 4px 0 0; /* Remember vendor prefixes */
   box-shadow: 0 1px 0 0 rgba(255,255,255,.6) inset; /* Remember vendor prefixes */
   display: block;
-  height: 100px;
-  padding: 20px 0;
+  height: 380px;
+  padding: 30px 0;
+  margin-bottom: 20px;
   position: relative;
   text-align: center;
   vertical-align: bottom;
@@ -110,7 +109,7 @@ img {
 
 .chart .axis { 
   display: none;
-  top: 35px;
+  top: 2px;
   width: 15%;
  }
 
@@ -162,7 +161,6 @@ border: 1px solid  #ab64f4 ;
 .chart .skill {
     bottom: 20px;
     font-size: 16px;
-    margin-left: 10%;
   }
 
 
@@ -175,7 +173,7 @@ border: 1px solid  #ab64f4 ;
     display: inline-block;
     /*height: 425px;*/
     margin: 0 1.8% 0 0;
-    width: 14%;
+    width: 13%;
   }
   .chart .axis {
     display: inline-block;
@@ -192,13 +190,13 @@ border: 1px solid  #ab64f4 ;
   }
 
   img{
-    height: 10px;
-    width: 10px;
+    height: 150px;
+    width: 130px;
   }
 
 }
 
-@media (min-width: 375px) {
+@media (max-width: 375px) {
   .chart {
     height: 250px;
   }
@@ -261,11 +259,11 @@ border: 1px solid  #ab64f4 ;
 
 @media (max-width: 1200px) {
 
-img {
-    position: relative;
-    margin-bottom: 2em;
-    height: 130px;
-    width: 110px;
-}
+  img {
+      position: relative;
+      margin-bottom: 2em;
+      height: 130px;
+      width: 110px;
+  }
 
 }

@@ -1,0 +1,352 @@
+ .game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/*ARROW GO BACK ICON*/
+.two { 
+  width: 9.33%; 
+  -webkit-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  margin: 2em;
+}
+
+.two:hover { 
+  transform: scale(1.1);
+}
+
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+
+.left-arrow{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  background-color: #1abc9c;
+}
+
+.left-arrow:before{
+  content: "";
+  position: absolute;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid #fff;
+  top: 20px;
+  left: 20px;
+}
+
+.left-arrow:after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 30px;
+  background-color: #fff;
+  top: 50px;
+  left: 45px;
+}
+
+
+h1{
+  text-align: center;
+  margin-bottom: 1em;
+  font-weight: bold;
+  font-size: 4em;
+}
+.score-panel {
+     width: 400px;
+     padding-bottom: 2em;
+     align-items: center;
+    justify-content: center;
+ }
+
+.score-panel-container{
+    position: absolute;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    
+ }
+
+.moves_text {
+    margin: 0;
+    padding: 0;
+    display: inline;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/** Places the restart button on the RHS */
+.score-panel .restart {
+    float: right;
+    cursor: -webkit-grabbing; 
+    display: inline;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.timer_container li {
+    list-style: none;
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+
+.timer_container {
+  float: right;
+  margin-right: 10px;
+}
+
+.title{
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.timer {
+  display: inline;
+}
+
+.colon {
+  visibility: hidden;
+}
+
+.minutes {
+  visibility: hidden;
+}
+
+
+/* Modal Content/Box */
+.modal{
+  display: none;
+}
+.modal_content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding-left: 25%;
+    padding-right: 25%;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal_content .congratulatory_message {
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+  }
+
+.modal_content p {
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.play_again_button {
+    background: linear-gradient( -45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    color: black;
+    font-size: 28px;
+    padding: 10px 20px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.play_again_button:hover,
+.play_again_button:focus {
+  color:  #FFD700;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.play_again_button_container {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/******* CARD DECK *******/
+.card-deck {
+  	display: flex;
+  	justify-content: space-between;
+  	flex-wrap: wrap;
+  	align-items: center;
+  	width: 50%;
+    min-height: 680px;
+    padding: 2em;
+    background: linear-gradient( -45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); 
+    margin: auto;
+    margin-bottom: 8em;
+}
+
+
+
+.card-deck .card {
+  height: 10em;
+   width: 12em;
+   background: #2e3d60;
+   margin: 7px;
+   color:  #FFD700;
+   border-radius: 10px;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+}
+
+.card-deck .card img {
+    max-width: 110%;
+    max-height: 110%;
+    min-width: 100%;
+    min-height: 100%;
+    visibility: hidden;
+}
+.card-deck .card:hover{
+    opacity: 0.9;
+}
+
+
+.card-deck .card.open {
+  transform: rotateY( 180deg );
+   cursor: default;
+}
+
+.card-deck .card.match {
+   cursor: default;
+   /*background: #02ccba;
+   font-size: 60px;*/
+}
+
+.card-deck .card.not-a-match {
+   cursor: default;
+   /*background: #ff7256;
+   font-size: 60px;*/
+}
+
+
+
+@media screen and (max-width: 945px){
+  .two { 
+    width: 8.33%; 
+  }
+  .left-arrow{
+  width: 80px;
+  height: 80px;
+  }
+
+
+
+
+  h1{
+    font-size: 3em;
+  }
+
+  .card-deck {
+    width: 80%;
+    min-height: 500px;
+    padding: 0.5em;
+    background: linear-gradient( -45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); 
+    margin: auto;
+    margin-bottom: 5em;
+  }
+
+  .card-deck .card {
+    height: 7em;
+     width: 9em;
+     background: #2e3d60;
+     margin: 5px;
+     color:  #FFD700;
+     border-radius: 10px;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+  }
+}
+
+@media screen and (max-width: 600px){
+
+  .left-arrow{
+    background-color: #e9e5e5;
+    margin-top: 5px;
+
+  }
+
+  .left-arrow:before {
+    border-bottom: 30px solid #1abc9c;
+  }
+
+  .left-arrow:after{
+    background-color: #1abc9c;
+  }
+
+
+  h1{
+    font-size: 2em;
+  }
+
+  .modal_content {
+    margin: 10% auto; /* 15% from the top and centered */
+    padding-left: 10%;
+    padding-right: 10%;
+    border: 1px solid #888;
+    width: 90%; /* Could be more or less, depending on screen size */
+  }
+
+  .modal_content .congratulatory_message {
+      text-align: center;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+  .modal_content p {
+      font-size: 17px;
+  }
+
+  .play_again_button {
+      font-size: 16px;
+
+  }
+
+  .card-deck {
+    width: 90%;
+    min-height: 350px;
+    padding: 10px;
+    background: linear-gradient( -45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB); 
+    margin: 1px;
+    margin-bottom: 3em;
+  }
+
+
+  .card-deck .card {
+    height: 4.5em;
+     width: 6em;
+     background: #2e3d60;
+     margin: 3px;
+     color:  #FFD700;
+     border-radius: 6px;
+     cursor: pointer;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 5px 2px 20px 0 rgba(46, 61, 73, 0.5);
+  }
+}
+
+
+
+
+
